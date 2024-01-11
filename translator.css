@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(157, 157, 220);
+}
+.full{
+    background: white;
+    width: 700px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(49, 46, 46);
+}
+.sub{
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+.sub .text{
+    display: flex;
+    border-bottom: 1px solid silver;
+}
+.text .take-text{
+    border-left: 1px solid silver;
+    border-radius: 0;
+}
+.text textarea{
+    height: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background: none;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+.options, li, .icons, .icons i{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.options{
+    list-style: none;
+    padding: 13px;
+}
+.options .row.give .icons{
+    padding-right: 13px;
+    border-right: 1px solid rgb(183, 163, 163);
+}
+.options .row.take .icons{
+    padding-left: 13px;
+    border-left: 1px solid rgb(183, 163, 163);
+}
+.options .icons{
+    width: 40%;
+}
+.options .icons i{
+    width: 50px;
+    color: slategrey;
+    font-size: 15px;
+    cursor: pointer;
+    justify-content: center;
+}
+.options .row select{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background: none;
+}
+.options .exchange{
+    color: slategrey;
+    font-size: 18px;
+    cursor: pointer;
+}
+.full button{
+    width: 100%;
+    padding: 15px;
+    background: slategrey;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
